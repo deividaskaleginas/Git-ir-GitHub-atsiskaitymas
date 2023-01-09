@@ -1,0 +1,93 @@
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 5rem;
+  color: var(--color-white);
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: auto;
+  padding: 0;
+  transition: transform 0.7s ease-in-out;
+}
+
+.close-modal:hover {
+  background: none;
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+
+  background-color: var(--color-black);
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.modal > h1 {
+  display: inline-block;
+  text-align: left;
+  border-bottom: 1px solid var(--color-white);
+  padding-bottom: 0.5rem;
+}
+
+.image > video,
+.image > img {
+  max-width: 100%;
+  height: 30rem;
+  padding: 1rem 0;
+}
+
+.modal > p {
+  text-transform: none;
+  padding-bottom: 1rem;
+  color: var(--color-main);
+}
+
+.overlay {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+@media (min-width: 53.4375rem) {
+  .modal {
+    width: 50%;
+  }
+
+  .image > video,
+  .image > img {
+    max-width: 100%;
+    height: 20%;
+    padding: 1rem 0;
+    object-fit: cover;
+  }
+}
