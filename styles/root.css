@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-main: #ffffffba;
+  --color-white: #fff;
+  --color-link-hover: #2981b8;
+  --color-button-hover: #ffffff74;
+  --color-black: #000000;
+}
